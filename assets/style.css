@@ -28,6 +28,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/playfair-900i.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,12 +42,15 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Lora', serif;
 }
 
-.heading-font {
+h1, h2, h3 {
   font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .hero-bg {
