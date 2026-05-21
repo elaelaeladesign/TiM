@@ -1,133 +1,189 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Don Camillo &amp; Peppone – Freilufttheater im Klösterle Arriach 2026</title>
-  <meta name="description" content="Freilufttheater &bdquo;Don Camillo &amp; Peppone&ldquo; im Klösterle Arriach. Aufführungen am 3., 4., 10. und 11. Juli 2026, 19:30 Uhr. Tickets &amp; Infos." />
-  <link rel="preload" href="assets/fonts/playfair-900i.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/fonts/lora-400.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="assets/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Camillo & Peppone - Theater 2026</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- Lokales Tailwind -->
+    <script src="assets/tailwind.3.4.17.js"></script>
+
 </head>
-<body>
 
-  <header class="hero">
-    <div class="brand-logos">
-      <img src="assets/img/logo-tim.jpg" alt="Theater im Mittelpunkt – Theaterfreude für Theaterfreunde" />
-      <img src="assets/img/logo-tsk.jpg" alt="Theater Service Kärnten" />
+<body class="hero-bg min-h-screen text-[#34230f]">
+
+    <div class="max-w-4xl mx-auto px-6 pt-12">
+
+        <!-- Header Bilder -->
+        <div class="flex flex-col items-center space-y-8 mb-16">
+            <img src="assets/img/header-DCuP.png" alt="Header DCuP" class="w-full max-w-md h-auto">
+
+            <!-- Breiteres Kloesterle Bild -->
+            <img src="assets/img/header-kloesterle.png" alt="Klösterle" class="w-full max-w-xl h-auto -mt-4">
+
+            <!-- Hauptfoto mit Badge -->
+            <div class="main-photo-container max-w-2xl">
+                <img src="assets/img/header-foto.png" alt="Don Camillo & Peppone" class="w-full h-auto rounded">
+                <img src="assets/img/header-theaterservice.png" alt="Theater Service" class="theaterservice-badge">
+            </div>
+        </div>
+
+        <!-- Spieltermine -->
+        <section class="mb-24">
+            <h1 class="heading-font text-5xl md:text-6xl text-center tracking-tight text-[#af191c] italic">
+                Spieltermine 2026
+            </h1>
+            <div class="accent-line"></div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-[#f5e8c7] border border-[#34230f]/20 rounded-xl p-8 text-center">
+                    <div class="text-[#af191c] text-xl font-bold mb-1">FR</div>
+                    <div class="text-3xl font-semibold">03. Juli 2026</div>
+                </div>
+                <div class="bg-[#f5e8c7] border border-[#34230f]/20 rounded-xl p-8 text-center">
+                    <div class="text-[#af191c] text-xl font-bold mb-1">SA</div>
+                    <div class="text-3xl font-semibold">04. Juli 2026</div>
+                </div>
+                <div class="bg-[#f5e8c7] border border-[#34230f]/20 rounded-xl p-8 text-center">
+                    <div class="text-[#af191c] text-xl font-bold mb-1">FR</div>
+                    <div class="text-3xl font-semibold">10. Juli 2026</div>
+                </div>
+                <div class="bg-[#f5e8c7] border border-[#34230f]/20 rounded-xl p-8 text-center">
+                    <div class="text-[#af191c] text-xl font-bold mb-1">SA</div>
+                    <div class="text-3xl font-semibold">11. Juli 2026</div>
+                </div>
+            </div>
+
+            <!-- Uhrzeit & Ort -->
+            <div class="mt-14 text-center space-y-3">
+                <p class="text-4xl font-bold">19:30 Uhr</p>
+                <p class="text-2xl">Klösterle Arriach</p>
+            </div>
+
+            <!-- Regenersatztermine -->
+            <div class="mt-6 text-center">
+                <p class="text-lg font-medium text-[#af191c]">Regenersatztermine: SO, 05.07. &amp; SO, 12.07.2026</p>
+            </div>
+
+            <!-- Schnörkellinie -->
+            <div class="flex justify-center my-10">
+                <img src="assets/img/termine-schnoerkel.png" alt="" class="h-8 opacity-90">
+            </div>
+
+            <!-- Kontakt -->
+            <div class="text-center">
+                <p class="uppercase tracking-widest text-sm mb-3">Info &amp; Reservierung</p>
+                <a href="tel:+436507914760" class="text-4xl font-semibold hover:text-[#af191c] transition-colors">
+                    0650 / 791 47 60
+                </a>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-12 flex justify-center">
+                <a href="#"
+                    class="bg-[#af191c] hover:bg-[#8f1417] text-white px-12 py-6 rounded-full text-xl font-medium transition-all shadow-lg hover:scale-105">
+                    Tickets online kaufen
+                </a>
+            </div>
+        </section>
+
+        <!-- Über das Stück -->
+        <section class="mb-24">
+            <h2 class="heading-font text-4xl text-center mb-6 italic">Über das Stück</h2>
+            <div class="accent-line"></div>
+
+            <div class="prose prose-lg mx-auto max-w-prose mt-12 text-[#34230f] leading-relaxed">
+                <p>
+                    <span class="drop-cap">I</span>n einem kleinen italienischen Dorf, in dem die Kirchenglocken genauso
+                    laut sind wie die politischen Parolen, liefern sich zwei Männer ein ewiges Duell: Don Camillo, der
+                    hitzköpfige Priester mit direktem Draht nach oben, und Peppone, der ebenso leidenschaftliche wie
+                    unbeirrbare Bürgermeister – und überzeugte Vertreter der Arbeiterklasse.
+                </p>
+                <p>Als die ausgebeuteten Landarbeiter genug haben und kurzerhand in den Streik treten, steht das Dorf
+                    Kopf: Transparente flattern, Parolen hallen über den Marktplatz – und plötzlich sind sich Don
+                    Camillo und Peppone uneinig wie selten zuvor… oder vielleicht doch erstaunlich einig?</p>
+
+                <p>Denn während der eine göttliche Gerechtigkeit predigt, kämpft der andere für weltliche – und beide
+                    mischen kräftig im Chaos mit.</p>
+
+                <p>Mitten im Durcheinander kommt es zur alles entscheidenden Wette: Wer schafft es, die Streikenden auf
+                    seine Seite zu ziehen? Was als harmloser Wettstreit beginnt, entwickelt sich zu einem urkomischen
+                    Schlagabtausch voller Tricks, Taktik und überraschender Wendungen.</p>
+
+                <p>Zwischen hitzigen Reden, himmlischen Eingebungen und handfesten Dorfintrigen zeigt sich: So
+                    verschieden Don Camillo und Peppone auch sind – ohne einander geht es einfach nicht. Und vielleicht
+                    gewinnt am Ende ja jemand ganz anderes…</p>
+
+                <p class="italic">Ein turbulentes, pointenreiches Theatervergnügen über Macht, Moral und Menschlichkeit
+                    – mit viel Herz, Humor und der Erkenntnis, dass selbst die größten Gegensätze manchmal am selben
+                    Strang ziehen.</p>
+            </div>
+
+            <!-- TiM Bild -->
+            <div class="flex justify-center my-12">
+                <img src="assets/img/header-TiM.png" alt="Theater im Mittelpunkt" class="max-w-[280px] sm:max-w-xs h-auto">
+            </div>
+
+            <!-- <h3 class="heading-font text-3xl text-center mt-8 mb-6 italic">Freilufttheater</h3> -->
+
+            <!-- Blockquote -->
+            <div class="max-w-prose mx-auto bg-white/70 border-l-4 border-[#af191c] pl-8 py-8 italic text-lg">
+                Frei nach der Komödie von <strong>Gerold Theobaldt</strong> nach dem Roman „Mondo Piccolo – Don Camillo“
+                von <strong>Giovannino Guareschi</strong>.<br><br>
+                <strong>Fassung</strong> für Theater im Mittelpunkt von Robert Smolej.<br>
+                <strong>Dramaturgie:</strong> Robert Smolej<br>
+                <strong>Regie:</strong> Robert Smolej & Markus Johann Brandstätter
+            </div>
+        </section>
+
+        <!-- Sponsoren -->
+        <section class="mb-24">
+            <!-- <h2 class="heading-font text-4xl text-center mb-6 italic">Herzlichen Dank unseren Sponsoren!</h2> -->
+            <!-- Danke Bild -->
+            <div class="flex justify-center mt-12 -mb-4">
+                <img src="assets/sponsors/s-danke.png" alt="Herzlichen Dank unseren Sponsoren!" class="h-auto">
+            </div>
+
+            <p class="text-center text-lg mt-10 mb-12 max-w-md mx-auto">
+                Ohne die großzügige Unterstützung unserer Partner wäre diese Produktion nicht möglich.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <script>
+                    for (let i = 1; i <= 31; i++) {
+                        document.write(`
+                            <div class="bg-white/90 p-4 rounded-2xl flex items-center justify-center border border-[#34230f]/10 hover:border-[#af191c]/30 transition-all hover:scale-105">
+                                <img src="assets/sponsors/s${i}.png" 
+                                     alt="Sponsor ${i}" 
+                                     class="max-h-24 w-auto object-contain">
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#34230f]/90 backdrop-blur-md text-[#f5e8c7] py-12 text-center rounded-t-3xl">
+            <div class="max-w-2xl mx-auto px-6">
+                <p class="text-xl mb-6">
+                    <a href="https://www.theater-im-mittelpunkt.at" class="hover:text-white transition-colors">
+                        www.theater-im-mittelpunkt.at
+                    </a>
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-lg mb-8">
+                    <a href="impressum.html" class="hover:text-white transition-colors">Impressum</a>
+                    <a href="datenschutz.html" class="hover:text-white transition-colors">Datenschutzerklärung</a>
+                </div>
+
+                <p class="text-sm opacity-80">© 2026 Theater im Mittelpunkt</p>
+            </div>
+        </footer>
+
     </div>
-
-    <div class="wrap">
-      <p class="kicker">Freilufttheater präsentiert</p>
-      <h1 class="title">Don Camillo <span class="amp">&amp;</span> Peppone</h1>
-      <p class="subtitle">zu Besuch im Klösterle Arriach</p>
-
-      <figure class="hero-image">
-        <img src="assets/img/hero.jpg" alt="Don Camillo und Peppone vor der Kirche" />
-      </figure>
-    </div>
-  </header>
-
-  <section class="facts" aria-label="Termine und Tickets">
-    <h2>Spieltermine 2026</h2>
-
-    <div class="dates-grid">
-      <div class="date-card"><div class="day">FR</div><div class="full">03. Juli 2026</div></div>
-      <div class="date-card"><div class="day">SA</div><div class="full">04. Juli 2026</div></div>
-      <div class="date-card"><div class="day">FR</div><div class="full">10. Juli 2026</div></div>
-      <div class="date-card"><div class="day">SA</div><div class="full">11. Juli 2026</div></div>
-    </div>
-
-    <div class="facts-meta">
-      <div class="time">19:30 Uhr</div>
-      <div><strong>Klösterle Arriach</strong></div>
-      <p class="rain-note">Regenersatztermine: SO, 05.07. &amp; SO, 12.07.2026</p>
-    </div>
-
-    <div class="tickets">
-      <a href="https://www.theater-im-mittelpunkt.at" class="qr-box" aria-label="Tickets online kaufen">
-        <img src="assets/img/qr.jpg" alt="QR-Code zu den Online-Tickets" />
-      </a>
-      <div class="tickets-text">
-        <div>Info-Telefon</div>
-        <div class="phone">0650 / 791 47 60</div>
-        <a class="btn" href="https://www.theater-im-mittelpunkt.at">Tickets online kaufen</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="wrap">
-      <h2>Über das Stück</h2>
-      <div class="about-text">
-        <p>In einem kleinen italienischen Dorf, in dem die Kirchenglocken genauso laut sind wie die politischen Parolen, liefern sich zwei Männer ein ewiges Duell: Don Camillo, der hitzköpfige Priester mit direktem Draht nach oben, und Peppone, der ebenso leidenschaftliche wie unbeirrbare Bürgermeister – und überzeugte Vertreter der Arbeiterklasse.</p>
-        <p>Als die ausgebeuteten Landarbeiter genug haben und kurzerhand in den Streik treten, steht das Dorf Kopf: Transparente flattern, Parolen hallen über den Marktplatz – und plötzlich sind sich Don Camillo und Peppone uneinig wie selten zuvor… oder vielleicht doch erstaunlich einig? Denn während der eine göttliche Gerechtigkeit predigt, kämpft der andere für weltliche – und beide mischen kräftig im Chaos mit.</p>
-        <p>Mitten im Durcheinander kommt es zur alles entscheidenden Wette: Wer schafft es, die Streikenden auf seine Seite zu ziehen? Was als harmloser Wettstreit beginnt, entwickelt sich zu einem urkomischen Schlagabtausch voller Tricks, Taktik und überraschender Wendungen – denn der Ausgang ist alles andere als vorhersehbar.</p>
-        <p>Zwischen hitzigen Reden, himmlischen Eingebungen und handfesten Dorfintrigen zeigt sich: So verschieden Don Camillo und Peppone auch sind – ohne einander geht es einfach nicht. Und vielleicht gewinnt am Ende ja jemand ganz anderes…</p>
-        <p><em>Ein turbulentes, pointenreiches Theatervergnügen über Macht, Moral und Menschlichkeit – mit viel Herz, Humor und der Erkenntnis, dass selbst die größten Gegensätze manchmal am selben Strang ziehen.</em></p>
-      </div>
-
-      <div class="credits">
-        <p>Frei nach der Komödie von <strong>Gerold Theobaldt</strong> nach dem Roman „Mondo Piccolo – Don Camillo“ von <strong>Giovannino Guareschi</strong>.</p>
-        <p>Fassung für Theater im Mittelpunkt von <strong>Robert Smolej</strong>.</p>
-        <p><strong>Dramaturgie:</strong> Robert Smolej</p>
-        <p><strong>Regie:</strong> Robert Smolej &amp; Markus Johann Brandstätter</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sponsors">
-    <h2>Herzlichen Dank unseren Sponsoren!</h2>
-    <p class="sponsors-intro">Ohne ihre Unterstützung wäre dieses Stück nicht möglich.</p>
-    <div class="sponsor-grid">
-      <div class="sponsor"><img src="assets/sponsors/s1.jpg" alt="Sponsor 1" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s2.jpg" alt="Sponsor 2" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s3.jpg" alt="Sponsor 3" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s4.jpg" alt="Sponsor 4" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s5.jpg" alt="Sponsor 5" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s6.jpg" alt="Sponsor 6" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s7.jpg" alt="Sponsor 7" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s8.jpg" alt="Sponsor 8" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s9.jpg" alt="Sponsor 9" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s10.jpg" alt="Sponsor 10" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s11.jpg" alt="Sponsor 11" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s12.jpg" alt="Sponsor 12" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s13.jpg" alt="Sponsor 13" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s14.jpg" alt="Sponsor 14" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s15.jpg" alt="Sponsor 15" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s16.jpg" alt="Sponsor 16" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s17.jpg" alt="Sponsor 17" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s18.jpg" alt="Sponsor 18" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s19.jpg" alt="Sponsor 19" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s20.jpg" alt="Sponsor 20" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s21.jpg" alt="Sponsor 21" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s22.jpg" alt="Sponsor 22" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s23.jpg" alt="Sponsor 23" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s24.jpg" alt="Sponsor 24" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s25.jpg" alt="Sponsor 25" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s26.jpg" alt="Sponsor 26" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s27.jpg" alt="Sponsor 27" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s28.jpg" alt="Sponsor 28" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s29.jpg" alt="Sponsor 29" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s30.jpg" alt="Sponsor 30" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s31.jpg" alt="Sponsor 31" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s32.jpg" alt="Sponsor 32" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s33.jpg" alt="Sponsor 33" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s34.jpg" alt="Sponsor 34" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s35.jpg" alt="Sponsor 35" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s36.jpg" alt="Sponsor 36" loading="lazy" /></div>
-      <div class="sponsor"><img src="assets/sponsors/s37.jpg" alt="Sponsor 37" loading="lazy" /></div>
-    </div>
-  </section>
-
-  <footer>
-    <span class="web">www.theater-im-mittelpunkt.at</span>
-    <div>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutzerklärung</a>
-    </div>
-    <p style="margin-top:16px;opacity:0.6;">© 2026 Theater im Mittelpunkt</p>
-  </footer>
 
 </body>
+
 </html>
