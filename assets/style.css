@@ -81,20 +81,6 @@ h1, h2, h3 {
   margin-bottom: 1.5rem;
 }
 
-.main-photo-container {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.theaterservice-badge {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 120px;
-  z-index: 10;
-}
-
 /* === Sub pages === */
 .page {
   max-width: 760px;
